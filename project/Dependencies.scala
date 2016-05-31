@@ -8,5 +8,7 @@ object Dependencies {
   val spark = "org.apache.spark" %% "spark-core" % "1.4.1" % "provided"
   val protobuf = "com.google.protobuf" % "protobuf-java" % "2.5.0"
 
-  def all = Seq(spark, protobuf) ++ Seq(scalaCheck, scalaTest)
+  val scopt = "com.github.scopt" %% "scopt" % "3.3.0"
+
+  def all = Seq(spark, protobuf, scopt) ++ Seq(scalaCheck, scalaTest)
 }
