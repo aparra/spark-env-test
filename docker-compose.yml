@@ -1,0 +1,7 @@
+---
+spark:
+  image: sequenceiq/spark:1.6.0
+  ports:
+    - "8088:8088"
+    - "8042:8042"
+  command: -d -h sandbox
